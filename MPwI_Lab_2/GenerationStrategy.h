@@ -3,5 +3,5 @@
 class GenerationStrategy
 {
 public:
-	virtual void generate();
+	virtual long long next() abstract;
 };

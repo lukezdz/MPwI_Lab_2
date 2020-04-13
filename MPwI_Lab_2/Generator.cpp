@@ -1,11 +1,22 @@
 #include "Generator.h"
 
-Generator::Generator(Strategy strategy)
+Generator::Generator(GenerationStrategy& strategy)
 	:strategy(strategy)
 {
 }
 
-void Generator::generate()
+long long Generator::next()
 {
-	strategy.generate();
+	return strategy.next();
+}
+
+std::vector<long long> Generator::generate(int amount)
+{
+	std::vector<long long> generated;
+	for (int i = 0; i < amount; i++)
+	{
+		generated.push_back(strategy.next());
+	}
+
+	return generated;
 }
