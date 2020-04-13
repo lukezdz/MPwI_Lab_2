@@ -127,10 +127,13 @@
     <ClInclude Include="LinearStrategy.h" />
     <ClInclude Include="RegisterStrategy.h" />
     <ClInclude Include="GenerationStrategy.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="LinearStrategy.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RegisterStrategy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
